@@ -2,6 +2,16 @@ body{
     text-align: center; 
     margin: auto 120px;
 }
+ h1 {
+    font-size: 50px;
+ }
+ h2 {
+     font-size: 30px;
+ }
+p {
+    font-size: 20px;
+}
+
 
 /*Nav Bar, Logo, summary and img*/
 .inline-block{
@@ -18,6 +28,11 @@ nav {
     width: 73%;
     padding: 1%;
  }
+ nav li{
+     padding-bottom: 0px;
+     padding-top: 0px; 
+     font-size: 20px;
+ }
 
 ul {
     width :50%;
@@ -28,12 +43,45 @@ ul {
     /*height: 600px;*/
     padding: 25px;
     margin-bottom: 10vh;  
-    background-color:rgba(18, 196, 196, 0.5);
+    background-color: #383F48;
    
+}
+
+#wrapper a{
+    background-color: #E1CEA0;
+    color: #27273F;
+    text-decoration: none;
+    padding: 10px 26px;
+    background: #E1CEA0;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    align-items: right;
+}
+#wrapper a:hover {
+    letter-spacing: 3px;
+}
+
+.content h1, p{
+    color: #E1CEA0;
+    text-align: left;
+    
+}
+
+.content h1 {
+    font-size: 50px;
+    margin: 0px;
+    
+}
+
+.content p {
+    font-size: 20px;
+    margin-top: 0px;
 }
 
 .content img{
     grid-area: img;
+    height: 100%;
 }
 /*#wrapper{
     grid-area: wrapper;
@@ -44,12 +92,18 @@ ul {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
     grid-template-areas: 
     'img' 'wrapper';
    
 }
 
-button {
+.hidden {
+    display: none;
+}
+
+
+button, .btn {
     background-color: #556956; 
     border: none;
     color: white;
@@ -61,13 +115,15 @@ button {
     border-radius: 12px;
   }
 
-button:hover {
+button:hover, .btn:hover {
     background-color: #f0ebee; 
     color: rgb(15, 15, 15);
   }
 
 
-
+.btn {
+    margin-top: 5%;
+}
 /*Footer CSS*/
 
 footer{
@@ -83,14 +139,21 @@ footer ul {
 
 footer li {
     color: white;
+    font-size: 20px;
 } 
 
 /*Skills Section CSS*/
 
-.placeholder {
+#skillsCard .placeholder {
     width: 100%;
     margin: 0 auto;
 }
+
+#skillsCard p {
+    color: black;
+    text-align: center;
+}
+
 
 
 .flexContainer {
@@ -107,11 +170,13 @@ footer li {
 /*My Work Section CSS*/
 .myWork {
     padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .workGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-template-areas: 
     'npoImg npo'
     'govImg gov'
@@ -119,6 +184,18 @@ footer li {
     margin: auto 120px;
 }
 
+#workCard p {
+    color: black;
+    text-align: center;
+}
+
+#workCardImg .placeholder {
+ height: 100%;
+}
+#workCard {
+    align-items: center;
+
+}
 .npo {
     grid-area: npo;
     padding: 20px;
